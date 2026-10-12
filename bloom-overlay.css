@@ -1,0 +1,3 @@
+html, body, #root { background: transparent !important; background-color: transparent !important; }
+body { margin: 0; overflow: hidden; }
+.flower-controls, .flower-control { display: none !important; }

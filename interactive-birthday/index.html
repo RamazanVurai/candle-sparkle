@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Happy Birthday ♥ — a little film</title>
+  <meta name="description" content="A cinematic birthday film in four acts: a beating heart you open with a tap, a rush of colour, a kinetic wish, and a tree that blooms into a heart of petals." />
+  <meta name="theme-color" content="#f7e7dc" />
+  <link rel="icon" type="image/png" href="./favicon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,900&display=swap" rel="stylesheet" />
+
+  <script>document.documentElement.classList.add('js')</script>
+  <script type="module" crossorigin src="./assets/index-DOpaFlii.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-CAkBa6du.css">
+  <style>
+    html, body { height: auto; min-height: 100%; overflow-x: hidden; overflow-y: auto; }
+    .scene { position: relative; inset: auto; width: 100%; height: 100vh; height: 100svh; overflow: hidden; }
+    .gifts-section { display: grid; place-items: center; width: 100%; min-height: 100vh; min-height: 100svh; overflow: hidden; background: #f7f2e6; }
+    .gifts-followup { display: grid; place-items: center; width: 100%; min-height: 100vh; min-height: 100svh; overflow: hidden; background: #f7f2e6; }
+    .gifts-followup img { display: block; width: auto !important; height: auto !important; max-width: 100vw !important; max-height: 100svh !important; object-fit: contain !important; }
+    .gifts-artwork { position: relative; width: min(100vw, 175.38svh); aspect-ratio: 1375 / 784; }
+    .gifts-artwork > img { display: block; width: 100%; height: 100%; object-fit: contain; }
+    .gift-surprise-hotspot { position: absolute; left: 64.7%; top: 30.6%; width: 22.2%; height: 33.7%; padding: 0; border: 0; border-radius: 12%; background: transparent; cursor: pointer; }
+    .gift-surprise-hotspot:focus-visible { outline: 3px solid #a66b75; outline-offset: 3px; }
+    .gift-cake-hotspot { position: absolute; left: 39%; top: 30%; width: 24%; height: 38%; padding: 0; border: 0; border-radius: 12%; background: transparent; cursor: pointer; }
+    .gift-cake-hotspot:focus-visible { outline: 3px solid #a66b75; outline-offset: 3px; }
+    .gift-camera-hotspot { position: absolute; left: 15.5%; top: 37%; width: 21%; height: 28%; padding: 0; border: 0; border-radius: 8%; background: transparent; cursor: pointer; }
+    .gift-camera-hotspot:focus-visible { outline: 3px solid #a66b75; outline-offset: 3px; }
+    .flower-gift-viewer { position: fixed; inset: 0; z-index: 9999; display: grid; place-items: center; padding: 0; border: 0; width: 100%; height: 100%; max-width: none; max-height: none; background: #f7f2e6; }
+    .flower-gift-viewer[hidden] { display: none; }
+    .flower-gift-viewer img { display: block; width: auto !important; height: auto !important; max-width: 90vw !important; max-height: 90svh !important; object-fit: contain !important; }
+    .flower-gift-viewer-close { position: absolute; top: max(16px, env(safe-area-inset-top)); right: max(16px, env(safe-area-inset-right)); width: 44px; height: 44px; border: 0; border-radius: 50%; color: #57433d; background: #fff9; font: 32px/1 sans-serif; cursor: pointer; }
+    .cake-confetti-viewer { position: fixed; inset: 0; z-index: 9998; display: grid; place-items: center; width: 100%; height: 100%; background: #f0f1d9; }
+    .cake-confetti-viewer[hidden] { display: none; }
+    .cake-confetti-trigger { position: relative; z-index: 1; display: grid; place-items: center; width: 100%; height: 100%; padding: 0; border: 0; background: transparent; cursor: pointer; }
+    .cake-confetti-frame { display: block; width: auto !important; height: auto !important; max-width: 96vw !important; max-height: 96svh !important; object-fit: contain !important; user-select: none; }
+    .cake-confetti-canvas { position: absolute; z-index: 2; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+    .cake-confetti-close { position: absolute; z-index: 2; top: max(16px, env(safe-area-inset-top)); right: max(16px, env(safe-area-inset-right)); width: 44px; height: 44px; border: 0; border-radius: 50%; color: #57433d; background: #fff9; font: 32px/1 sans-serif; cursor: pointer; }
+    .camera-gallery-viewer { position: fixed; inset: 0; z-index: 9997; overflow-y: auto; overscroll-behavior: contain; scroll-snap-type: y mandatory; background: #f7f2e6; }
+    .camera-gallery-viewer[hidden] { display: none; }
+    .camera-gallery-slide { display: grid; place-items: center; width: 100%; height: 100vh; height: 100svh; scroll-snap-align: start; }
+    .camera-gallery-art { position: relative; width: min(100vw, 177.34375svh); aspect-ratio: 1362 / 768; }
+    .camera-gallery-art > img { display: block; width: 100%; height: 100%; object-fit: contain; }
+    .camera-record-hotspot { position: absolute; left: 58.9%; top: 57.4%; width: 14.5%; height: 24%; padding: 0; border: 0; border-radius: 50%; background: transparent; cursor: pointer; }
+    .camera-record-hotspot:focus-visible { outline: 3px solid #a66b75; outline-offset: 3px; }
+    .camera-gallery-close { position: fixed; z-index: 2; top: max(16px, env(safe-area-inset-top)); right: max(16px, env(safe-area-inset-right)); width: 44px; height: 44px; border: 0; border-radius: 50%; color: #57433d; background: #fff9; font: 32px/1 sans-serif; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <main class="scene">
+
+    <!-- The tree world (Act 4). One canvas; it stays transparent until the
+         intro hands off, then it draws its own warm sky + blossom tree. -->
+    <canvas id="tree" class="tree" aria-label="A blossom tree grows and blooms into a heart made of petals" role="img"></canvas>
+
+    <!-- ACT 1 — THE INVITATION ------------------------------------------------
+         A single beating heart on a warm field. It is the only thing the
+         visitor has to do: tap it. Real <button> so it is tappable + keyboard
+         focusable; everything decorative around it is aria-hidden. -->
+    <section class="hero" id="hero" aria-label="Draw the bow to open your card">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="hero__motes" id="motes" aria-hidden="true"></div>
+
+      <p class="hero__eyebrow" id="eyebrow">a little something, for you</p>
+
+      <!-- THE TARGET — the heart the arrow flies to (GSAP animates .target) -->
+      <div class="targetWrap" aria-hidden="true">
+        <div class="target" id="target">
+          <span class="heart__glow" aria-hidden="true"></span>
+          <span class="target__heart" id="targetHeart">
+            <svg class="heart__svg" viewBox="0 0 100 92" aria-hidden="true">
+              <defs>
+                <radialGradient id="hg" cx="38%" cy="30%" r="80%">
+                  <stop offset="0%"  stop-color="#ffd9e4" />
+                  <stop offset="42%" stop-color="#ff6f97" />
+                  <stop offset="82%" stop-color="#d81e57" />
+                  <stop offset="100%" stop-color="#9d0f3e" />
+                </radialGradient>
+                <linearGradient id="hsheen" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%"  stop-color="rgba(255,255,255,.85)" />
+                  <stop offset="34%" stop-color="rgba(255,255,255,0)" />
+                </linearGradient>
+              </defs>
+              <path d="M50 86.5C26 68 10.5 53.6 10.5 34.6 10.5 20.4 21 11 33.2 11c8.6 0 14.2 4.7 16.8 11.4C52.6 15.7 58.2 11 66.8 11 79 11 89.5 20.4 89.5 34.6 89.5 53.6 74 68 50 86.5Z" fill="url(#hg)" />
+              <path d="M50 86.5C26 68 10.5 53.6 10.5 34.6 10.5 20.4 21 11 33.2 11c8.6 0 14.2 4.7 16.8 11.4C52.6 15.7 58.2 11 66.8 11 79 11 89.5 20.4 89.5 34.6 89.5 53.6 74 68 50 86.5Z" fill="url(#hsheen)" opacity=".7" />
+              <ellipse cx="34" cy="30" rx="8.5" ry="5.4" fill="#fff" opacity=".72" style="mix-blend-mode:screen" />
+            </svg>
+          </span>
+        </div>
+      </div>
+
+      <!-- THE BOW + ARROW — draw the string back, release to fire. The rig is
+           placed lower-left and rotated by JS to aim at the heart, so the shot
+           travels on a diagonal. A real control: role=button + keyboard drag. -->
+      <div class="archery" id="archery" role="button" tabindex="0"
+           aria-label="Draw the bow and release to send the arrow to the heart">
+
+          <!-- aim line, inside the rig so it points straight at the heart -->
+          <div class="aim" id="aim" aria-hidden="true"></div>
+
+          <!-- realistic recurve bow: wooden limbs, leather grip, a live string -->
+          <svg class="bow" id="bow" viewBox="0 0 460 300" aria-hidden="true">
+            <defs>
+              <linearGradient id="limb" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0"   stop-color="#4a2a1a" />
+                <stop offset=".18" stop-color="#6b3f24" />
+                <stop offset=".5"  stop-color="#8a5127" />
+                <stop offset=".82" stop-color="#6b3f24" />
+                <stop offset="1"   stop-color="#4a2a1a" />
+              </linearGradient>
+              <linearGradient id="limbHi" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="rgba(255,214,160,.8)" />
+                <stop offset="1" stop-color="rgba(255,214,160,0)" />
+              </linearGradient>
+              <linearGradient id="grip" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0" stop-color="#2a1a10" />
+                <stop offset=".5" stop-color="#5a3822" />
+                <stop offset="1" stop-color="#2a1a10" />
+              </linearGradient>
+            </defs>
+            <!-- limb body (taper faked with two stacked strokes) -->
+            <path class="bow__limb" d="M34 96 C 118 168, 168 240, 230 252 C 292 240, 342 168, 426 96"
+                  fill="none" stroke="url(#limb)" stroke-width="13" stroke-linecap="round" />
+            <path class="bow__limbHi" d="M34 96 C 118 168, 168 240, 230 252 C 292 240, 342 168, 426 96"
+                  fill="none" stroke="url(#limbHi)" stroke-width="3" stroke-linecap="round" opacity=".7" />
+            <!-- recurve tip hooks -->
+            <path d="M34 96 C 22 82, 26 70, 40 66" fill="none" stroke="url(#limb)" stroke-width="8" stroke-linecap="round" />
+            <path d="M426 96 C 438 82, 434 70, 420 66" fill="none" stroke="url(#limb)" stroke-width="8" stroke-linecap="round" />
+            <!-- leather grip over the belly -->
+            <rect x="216" y="206" width="28" height="70" rx="9" fill="url(#grip)" />
+            <path d="M219 220h22 M219 236h22 M219 252h22" stroke="rgba(0,0,0,.35)" stroke-width="2" />
+            <!-- the string: two segments meeting at the nock (JS animates the nock).
+                 A warm taupe so the taut string actually reads against the cream. -->
+            <line class="bow__str" id="strL" x1="40" y1="70" x2="230" y2="96" stroke="#9a8068" stroke-width="2.2" stroke-linecap="round" />
+            <line class="bow__str" id="strR" x1="420" y1="70" x2="230" y2="96" stroke="#9a8068" stroke-width="2.2" stroke-linecap="round" />
+            <circle class="bow__serving" id="serving" cx="230" cy="96" r="4.5" fill="#6f5137" />
+          </svg>
+
+          <!-- the arrow: winged golden heart tip (Cupid), gold feather fletching -->
+          <svg class="arrow" id="arrow" viewBox="0 0 64 220" aria-hidden="true">
+            <defs>
+              <linearGradient id="shaft" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0" stop-color="#4a2c14" />
+                <stop offset=".5" stop-color="#8a5a2c" />
+                <stop offset="1" stop-color="#3e2410" />
+              </linearGradient>
+              <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#ffe38c" />
+                <stop offset=".45" stop-color="#f4a626" />
+                <stop offset="1" stop-color="#a85f0e" />
+              </linearGradient>
+              <linearGradient id="feath" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#ff7f9c" />
+                <stop offset=".5" stop-color="#e6396a" />
+                <stop offset="1" stop-color="#a8154a" />
+              </linearGradient>
+              <linearGradient id="wing" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#ffffff" />
+                <stop offset="1" stop-color="#ffe0c4" />
+              </linearGradient>
+            </defs>
+
+            <!-- shaft (dark wood so it reads against the cream) -->
+            <rect x="29.4" y="30" width="5.2" height="168" rx="2.6" fill="url(#shaft)" />
+
+            <!-- angel wings flanking the heart tip -->
+            <g class="arrow__wings">
+              <path class="wingL" d="M31 30 C 10 16, 2 20, 4 34 C 12 30, 20 32, 31 40 Z" fill="url(#wing)" stroke="rgba(196,132,58,.72)" stroke-width="1.2"/>
+              <path class="wingR" d="M33 30 C 54 16, 62 20, 60 34 C 52 30, 44 32, 33 40 Z" fill="url(#wing)" stroke="rgba(196,132,58,.72)" stroke-width="1.2"/>
+            </g>
+
+            <!-- golden heart arrowhead (Cupid's love arrow) -->
+            <path class="arrow__head" d="M32 12 C 30 7, 22 6.5, 21.5 13 C 21 18, 27 22, 32 27 C 37 22, 43 18, 42.5 13 C 42 6.5, 34 7, 32 12 Z" fill="url(#gold)" stroke="#a5701a" stroke-width=".8" />
+            <ellipse cx="27" cy="13" rx="2.6" ry="1.7" fill="#fff" opacity=".8" style="mix-blend-mode:screen" />
+
+            <!-- gold feather fletching -->
+            <g class="arrow__fletch">
+              <path d="M32 150 C 16 156, 10 178, 15 200 C 24 194, 30 184, 32 176 Z" fill="url(#feath)" />
+              <path d="M32 150 C 48 156, 54 178, 49 200 C 40 194, 34 184, 32 176 Z" fill="url(#feath)" opacity=".92" />
+              <path d="M28 160l4 3 M26 170l6 3 M25 180l7 3" stroke="rgba(130,12,48,.45)" stroke-width="1" />
+              <path d="M36 160l-4 3 M38 170l-6 3 M39 180l-7 3" stroke="rgba(130,12,48,.45)" stroke-width="1" />
+            </g>
+            <!-- nock -->
+            <path d="M29 200 L32 205 L35 200" fill="none" stroke="#c9a25a" stroke-width="2" stroke-linecap="round"/>
+            <!-- invisible tip marker: JS measures it to land the head on the heart -->
+            <circle id="tip" cx="32" cy="9" r="0.6" fill="none" />
+          </svg>
+      </div>
+
+      <p class="hero__hint" id="hint">pull &amp; release</p>
+    </section>
+
+    <!-- ACT 2 — THE FLOOD -----------------------------------------------------
+         The heart bursts into this circle at its landing point, and it swallows
+         the frame in rose. Same trick as the intro dot: no cross-fade anywhere,
+         the colour just arrives. -->
+    <div class="flood" id="flood" aria-hidden="true"></div>
+
+    <!-- ACT 3 — THE WISH (kinetic type on the flood) --------------------------
+         Lives inside the flood's own colour, revealed by it. Every glyph hinges
+         up out of its mask — nothing fades. -->
+    <div class="field" id="field" aria-hidden="true">
+      <div class="blob blob--1"></div>
+      <div class="blob blob--2"></div>
+      <div class="blob blob--3"></div>
+      <div class="fgrid" id="fgrid"></div>
+      <div class="fvignette"></div>
+
+      <div class="camera" id="camera">
+        <p class="kEyebrow" id="kEyebrow">make a wish&hellip;</p>
+        <h2 class="headline" id="headline">
+          <span class="hl__line"><span class="mask"><span class="hl__word" id="wLine1">Happy</span></span></span>
+          <span class="hl__line"><span class="mask"><span class="hl__word" id="wLine2">Birthday</span></span></span>
+        </h2>
+        <svg class="uline" id="uline" viewBox="0 0 300 26" fill="none" aria-hidden="true">
+          <path class="uline__path" d="M8 16C56 7 132 4 178 6c30 1 78 5 114 12-40 3-108 4-176 3"
+                stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <p class="kSub" id="kSub">to someone worth celebrating</p>
+      </div>
+
+      <div class="bar bar--top" id="barTop"></div>
+      <div class="bar bar--bot" id="barBot"></div>
+    </div>
+
+    <!-- The gold light that bridges the rose wish into the dawn of the tree. -->
+    <div class="bloom" id="bloom" aria-hidden="true"></div>
+
+    <!-- ACT 4 — THE HAND-LETTERED WISH (over the tree) ------------------------ -->
+    <div class="wish" id="wish" aria-hidden="true">
+      <p class="wish__eyebrow" id="wEyebrow">and&hellip; make it count</p>
+      <div class="wish__heroWrap"><h1 class="wish__hero" id="wHero">Happy Birthday</h1></div>
+      <span class="wish__rule" id="wRule"></span>
+      <p class="wish__sub" id="wSub">here&rsquo;s to a year that blooms</p>
+    </div>
+
+    <!-- Play the film again once it has settled. -->
+    <button class="replay" id="replay" type="button" hidden>
+      <svg viewBox="0 0 24 24" aria-hidden="true" width="15" height="15">
+        <path d="M12 5V2L7 6l5 4V7a5 5 0 1 1-5 5H5a7 7 0 1 0 7-7z" fill="currentColor" />
+      </svg>
+      Again
+    </button>
+
+    <!-- One lens over the whole film: vignette + fine grain. -->
+    <div class="grade" aria-hidden="true">
+      <div class="grade__vignette"></div>
+      <div class="grade__grain"></div>
+    </div>
+  </main>
+
+  <section class="gifts-section" aria-label="Gifts Just For You">
+    <div class="gifts-artwork">
+      <img src="./gifts-just-for-you.jpeg" alt="Gifts Just For You: memories, cake and surprise" />
+      <button class="gift-camera-hotspot" type="button" aria-label="Open the photo memories" onclick="document.getElementById('camera-gallery-viewer').hidden = false"></button>
+      <button class="gift-cake-hotspot" id="gift-cake-hotspot" type="button" aria-label="Open the cake and confetti surprise"></button>
+      <button class="gift-surprise-hotspot" type="button" aria-label="Open the flower surprise" onclick="document.getElementById('flower-gift-viewer').hidden = false"></button>
+    </div>
+  </section>
+  <section class="gifts-followup" aria-label="Good things take time">
+    <img src="./gifts-followup.jpeg" alt="Good things take time — two linked hearts" />
+  </section>
+  <div class="flower-gift-viewer" id="flower-gift-viewer" role="dialog" aria-modal="true" aria-label="Flowers just for you" hidden onclick="if (event.target === this) this.hidden = true">
+    <img src="./flowers-just-for-you.jpeg" alt="Flowers just for you" />
+    <button class="flower-gift-viewer-close" type="button" aria-label="Close" onclick="document.getElementById('flower-gift-viewer').hidden = true">×</button>
+  </div>
+  <div class="camera-gallery-viewer" id="camera-gallery-viewer" role="dialog" aria-modal="true" aria-label="Photo memories" hidden>
+    <section class="camera-gallery-slide"><div class="camera-gallery-art"><img src="./camera-memory-2.jpeg" alt="Message For You with two photos" /><button class="camera-record-hotspot" type="button" aria-label="Play the birthday song" onclick="window.open('https://music.youtube.com/watch?v=QbLGjeR9bvI&amp;si=U-pOeCRIZAbmgsXB', '_blank', 'noopener,noreferrer')"></button></div></section>
+    <section class="camera-gallery-slide"><img src="./camera-memory-1.jpeg" alt="Shared photo memories with Peace, Happiness and Soulmates notes" /></section>
+    <button class="camera-gallery-close" type="button" aria-label="Close" onclick="document.getElementById('camera-gallery-viewer').hidden = true">×</button>
+  </div>
+  <div class="cake-confetti-viewer" id="cake-confetti-viewer" role="dialog" aria-modal="true" aria-label="Cake and confetti surprise" hidden>
+    <canvas class="cake-confetti-canvas" id="cake-confetti-canvas" aria-hidden="true"></canvas>
+    <button class="cake-confetti-trigger" id="cake-confetti-trigger" type="button" aria-label="Tap the cake for confetti">
+      <img class="cake-confetti-frame" id="cake-confetti-frame" src="./cake-confetti/cake-whole.jpg" alt="Birthday cake — tap for confetti" />
+    </button>
+    <button class="cake-confetti-close" type="button" aria-label="Close">×</button>
+  </div>
+  <script>
+    (() => {
+      const viewer = document.getElementById('cake-confetti-viewer');
+      const trigger = document.getElementById('cake-confetti-trigger');
+      const cake = document.getElementById('cake-confetti-frame');
+      const canvas = document.getElementById('cake-confetti-canvas');
+      const context = canvas.getContext('2d');
+      const frames = [
+        './cake-confetti/cake-whole.jpg',
+        './cake-confetti/cake-first-bite.jpg',
+        './cake-confetti/cake-second-bite.jpg',
+        './cake-confetti/cake-last-bite.jpg',
+      ];
+      let bite = 0;
+      let cakeTaps = 0;
+      let confettiDone = false;
+      let particles = [];
+      let animationFrame = 0;
+      const fitCanvas = () => {
+        const ratio = window.devicePixelRatio || 1;
+        canvas.width = Math.round(window.innerWidth * ratio);
+        canvas.height = Math.round(window.innerHeight * ratio);
+        context.setTransform(ratio, 0, 0, ratio, 0, 0);
+      };
+      const closeViewer = () => {
+        viewer.hidden = true;
+        bite = 0;
+        cakeTaps = 0;
+        confettiDone = false;
+        cake.src = frames[0];
+        cancelAnimationFrame(animationFrame);
+        context.clearRect(0, 0, window.innerWidth, window.innerHeight);
+      };
+      const burst = () => {
+        fitCanvas();
+        const colors = ['#e88bac', '#f2c764', '#fff7dc', '#db668d', '#8b7f49'];
+        particles = Array.from({ length: 110 }, () => ({
+          x: window.innerWidth * (.34 + Math.random() * .32),
+          y: window.innerHeight * (.30 + Math.random() * .26),
+          vx: (Math.random() - .5) * 9,
+          vy: -2 - Math.random() * 8,
+          gravity: .12 + Math.random() * .12,
+          size: 3 + Math.random() * 7,
+          angle: Math.random() * Math.PI,
+          spin: (Math.random() - .5) * .18,
+          color: colors[Math.floor(Math.random() * colors.length)],
+          life: 95 + Math.random() * 50,
+        }));
+        cancelAnimationFrame(animationFrame);
+        const draw = () => {
+          context.clearRect(0, 0, window.innerWidth, window.innerHeight);
+          particles = particles.filter((particle) => particle.life > 0 && particle.y < window.innerHeight + 20);
+          for (const particle of particles) {
+            particle.x += particle.vx;
+            particle.y += particle.vy;
+            particle.vy += particle.gravity;
+            particle.angle += particle.spin;
+            particle.life -= 1;
+            context.save();
+            context.translate(particle.x, particle.y);
+            context.rotate(particle.angle);
+            context.globalAlpha = Math.min(1, particle.life / 22);
+            context.fillStyle = particle.color;
+            context.fillRect(-particle.size / 2, -particle.size / 2, particle.size, particle.size * .7);
+            context.restore();
+          }
+          if (particles.length) animationFrame = requestAnimationFrame(draw);
+          else context.clearRect(0, 0, window.innerWidth, window.innerHeight);
+        };
+        animationFrame = requestAnimationFrame(draw);
+      };
+      document.getElementById('gift-cake-hotspot').addEventListener('click', () => {
+        viewer.hidden = false;
+        bite = 0;
+        cakeTaps = 0;
+        confettiDone = false;
+        cake.src = frames[bite];
+      });
+      trigger.addEventListener('click', () => {
+        if (bite < frames.length - 1) {
+          bite += 1;
+          cakeTaps = 0;
+          cake.src = frames[bite];
+          return;
+        }
+        cakeTaps += 1;
+        if (cakeTaps >= 2 && !confettiDone) {
+          confettiDone = true;
+          burst();
+        }
+      });
+      viewer.addEventListener('click', (event) => { if (event.target === viewer) closeViewer(); });
+      document.querySelector('.cake-confetti-close').addEventListener('click', closeViewer);
+      document.addEventListener('keydown', (event) => { if (event.key === 'Escape' && !viewer.hidden) closeViewer(); });
+      window.addEventListener('resize', fitCanvas);
+    })();
+  </script>
+
+  <!-- Accessible equivalent for reduced-motion + screen readers. -->
+  <p class="sr-only">Happy Birthday. Here&rsquo;s to a wonderful year ahead.</p>
+
+</body>
+</html>

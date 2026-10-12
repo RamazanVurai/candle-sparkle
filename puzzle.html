@@ -1,0 +1,186 @@
+<!DOCTYPE html><html lang="en"><head><script>history.replaceState(null,"","/")</script><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="preload" as="image" href="/assets/blossom-DK6sceq6.png"/><link rel="preload" as="image" href="/__l5e/assets-v1/9ec615bc-59f7-4e0f-bbff-3bc6c0e625cb/our-picture.jpeg"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&amp;family=Nunito+Sans:wght@400;500;600&amp;display=swap" data-precedence="default"/><link rel="stylesheet" href="/assets/styles-CLsNxVYv.css" data-precedence="default"/><title>Our little picture ♡ | Fotoğraf Yapbozu</title><meta name="description" content="Pembe çiçekler arasında küçük fotoğraf yapbozumuz."/><meta property="og:title" content="Our little picture ♡"/><meta property="og:description" content="Pembe çiçekler arasında küçük fotoğraf yapbozumuz."/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><link rel="modulepreload" href="/assets/index-BvkMhzdN.js"/><link rel="modulepreload" href="/assets/routes-401Ihkni.js"/><link rel="icon" href="/favicon.ico" type="image/x-icon"/>
+<style>
+	#lovable-badge {
+		--badge-bg: #1b1b1b;
+		--badge-text: #c5c1b9;
+		--badge-text-hover: #dcdad5;
+		--badge-radius: 6px;
+		--badge-padding: 8px;
+		--badge-gap: 6px;
+		--badge-shadow: 
+			0 0 0 1px rgba(0, 0, 0, 0.88),
+			0 1px 0 0 rgba(0, 0, 0, 0.04),
+			0 2px 2px -1px rgba(0, 0, 0, 0.08),
+			0 4px 4px -2px rgba(0, 0, 0, 0.08),
+			0 8px 8px -4px rgba(0, 0, 0, 0.08),
+			0 16px 16px -8px rgba(0, 0, 0, 0.08);
+		--badge-transition-duration: 0.2s;
+		--badge-transition-easing: cubic-bezier(0.16, 1, 0.32, 1);
+		--focus-color: #575ECF;
+		--focus-offset: 2px;
+		--focus-width: 2px;
+		
+		position: fixed;
+		bottom: 12px;
+		right: 12px;
+		height: 24px;
+		display: flex;
+		align-items: center;
+		z-index: 1000000;
+		background-color: var(--badge-bg) !important;
+		color: var(--badge-text) !important;
+		border-radius: var(--badge-radius);
+		box-shadow: var(--badge-shadow) !important;
+		font-size: 12px;
+		font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+		font-weight: 400 !important;
+		text-transform: none !important;
+		font-feature-settings: normal !important;
+		transform: translateZ(0);
+		will-change: transform, opacity;
+		transition: opacity var(--badge-transition-duration) var(--badge-transition-easing);
+	}
+
+	#lovable-badge.closing {
+		opacity: 0;
+		pointer-events: none;
+	}
+
+	#lovable-badge-cta {
+		display: flex;
+		align-items: baseline;
+		gap: var(--badge-gap);
+		box-sizing: border-box;
+		padding: 4px var(--badge-padding) 0;
+		height: 100%;
+		color: inherit;
+		text-decoration: none;
+		white-space: nowrap;
+		border-radius: var(--badge-radius) 0 0 var(--badge-radius);
+		transition: 
+			background-color var(--badge-transition-duration) ease,
+			color var(--badge-transition-duration) ease,
+			transform 0.1s ease;
+	}
+
+	#lovable-badge-cta:hover {
+		background: rgba(255, 255, 255, 0.04);
+		color: var(--badge-text-hover);
+	}
+
+	#lovable-badge-cta:active {
+		transform: scale(0.98);
+	}
+
+	#lovable-badge-cta:focus {
+		outline: none;
+	}
+
+	#lovable-badge-cta:focus-visible {
+		outline: var(--focus-width) solid var(--focus-color);
+		outline-offset: var(--focus-offset);
+		z-index: 1;
+	}
+
+	#lovable-badge-text {
+		line-height: 1;
+	}
+
+	/* The wordmark baseline sits at y=12 of the 16px logo; an empty 12px box
+	   makes that the flex baseline so the text aligns to it on any system font. */
+	#lovable-badge-logo {
+		position: relative;
+		display: block;
+		width: 52px;
+		height: 12px;
+	}
+
+	#lovable-badge-logo svg {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	#lovable-badge-divider {
+		width: 1px;
+		height: 24px;
+		background-color: rgba(255, 255, 255, 0.04);
+		flex-shrink: 0;
+	}
+
+	#lovable-badge-close {
+		width: 24px;
+		height: 24px;
+		min-width: 24px;
+		min-height: 24px;
+		cursor: pointer;
+		background: none;
+		border: none;
+		padding: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 0 var(--badge-radius) var(--badge-radius) 0;
+		flex-shrink: 0;
+		transition: 
+			background-color var(--badge-transition-duration) ease,
+			transform 0.1s ease;
+	}
+
+	#lovable-badge-close:hover {
+		background: rgba(255, 255, 255, 0.04);
+	}
+
+	#lovable-badge-close:active {
+		transform: scale(0.92);
+	}
+
+	#lovable-badge-close:focus {
+		outline: none;
+	}
+
+	#lovable-badge-close:focus-visible {
+		outline: var(--focus-width) solid var(--focus-color);
+		outline-offset: calc(var(--focus-offset) * -1);
+		z-index: 1;
+	}
+
+	#lovable-badge-close svg path {
+		fill: var(--badge-text);
+		transition: fill var(--badge-transition-duration) ease;
+	}
+
+	#lovable-badge-close:hover svg path {
+		fill: var(--badge-text-hover);
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		#lovable-badge,
+		#lovable-badge-cta,
+		#lovable-badge-close,
+		#lovable-badge-close svg path {
+			transition: none;
+		}
+		
+		#lovable-badge-cta:active,
+		#lovable-badge-close:active {
+			transform: none;
+		}
+	}
+
+	@media (prefers-contrast: high) {
+		#lovable-badge {
+			--badge-bg: #000;
+			--badge-text: #fff;
+			--badge-text-hover: #fff;
+			border: 2px solid currentColor;
+		}
+		
+		#lovable-badge-cta:focus-visible,
+		#lovable-badge-close:focus-visible {
+			outline-width: 3px;
+		}
+	}
+</style>
+<script defer src="/~flock.js" data-proxy-url="/~api/analytics"></script><script defer src="/__l5e/events.1718a1eacac7ff3a.js" data-artifact-kind="dwl_content_hash" data-artifact-id="5302b0758c594f6f0b18e2634faf564825f80dce7b714e69ba85ff5d7a083397" data-commit-sha="94ea020e992428e2a0128c8cbc802b6079f4d6ae" data-context-token="v1.eyJwcm9qZWN0X2lkIjoibG92cF82cDg1OWpubTkxOHdxYjEyOXc2cXI1NXNoNSIsImFydGlmYWN0X2tpbmQiOiJkd2xfY29udGVudF9oYXNoIiwiYXJ0aWZhY3RfaWQiOiI1MzAyYjA3NThjNTk0ZjZmMGIxOGUyNjM0ZmFmNTY0ODI1ZjgwZGNlN2I3MTRlNjliYTg1ZmY1ZDdhMDgzMzk3IiwiY29tbWl0X3NoYSI6Ijk0ZWEwMjBlOTkyNDI4ZTJhMDEyOGM4Y2JjODAyYjYwNzlmNGQ2YWUiLCJleHAiOjE3OTQyOTkwOTB9.h4Ei8pj5_IJiwXMRUrl9XMLuA7VDfFcoKsS6OHNtJtM"></script><meta name="twitter:title" content="Our little picture ♡"><meta name="twitter:description" content="Pembe çiçekler arasında küçük fotoğraf yapbozumuz."><meta property="og:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/lovp_6p859jnm918wqb129w6qr55sh5/7c643ed9e6a1312967714d55c73b10b3_1791658864480.png"><meta name="twitter:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/lovp_6p859jnm918wqb129w6qr55sh5/7c643ed9e6a1312967714d55c73b10b3_1791658864480.png"></head><body><!--$--><main class="puzzle-page"><div class="flower-garden" aria-hidden="true"><img class="floating-flower flower-0" src="/assets/blossom-DK6sceq6.png" alt="" width="512" height="512"/><img class="floating-flower flower-1" src="/assets/blossom-DK6sceq6.png" alt="" width="512" height="512"/><img class="floating-flower flower-2" src="/assets/blossom-DK6sceq6.png" alt="" width="512" height="512"/><img class="floating-flower flower-3" src="/assets/blossom-DK6sceq6.png" alt="" width="512" height="512"/><img class="floating-flower flower-4" src="/assets/blossom-DK6sceq6.png" alt="" width="512" height="512"/><img class="floating-flower flower-5" src="/assets/blossom-DK6sceq6.png" alt="" width="512" height="512"/><img class="floating-flower flower-6" src="/assets/blossom-DK6sceq6.png" alt="" width="512" height="512"/><img class="floating-flower flower-7" src="/assets/blossom-DK6sceq6.png" alt="" width="512" height="512"/><img class="floating-flower flower-8" src="/assets/blossom-DK6sceq6.png" alt="" width="512" height="512"/><img class="floating-flower flower-9" src="/assets/blossom-DK6sceq6.png" alt="" width="512" height="512"/><img class="floating-flower flower-10" src="/assets/blossom-DK6sceq6.png" alt="" width="512" height="512"/><img class="floating-flower flower-11" src="/assets/blossom-DK6sceq6.png" alt="" width="512" height="512"/><img class="floating-flower flower-12" src="/assets/blossom-DK6sceq6.png" alt="" width="512" height="512"/><img class="floating-flower flower-13" src="/assets/blossom-DK6sceq6.png" alt="" width="512" height="512"/><img class="floating-flower flower-14" src="/assets/blossom-DK6sceq6.png" alt="" width="512" height="512"/><img class="floating-flower flower-15" src="/assets/blossom-DK6sceq6.png" alt="" width="512" height="512"/><img class="floating-flower flower-16" src="/assets/blossom-DK6sceq6.png" alt="" width="512" height="512"/><img class="floating-flower flower-17" src="/assets/blossom-DK6sceq6.png" alt="" width="512" height="512"/><img class="floating-flower flower-18" src="/assets/blossom-DK6sceq6.png" alt="" width="512" height="512"/><img class="floating-flower flower-19" src="/assets/blossom-DK6sceq6.png" alt="" width="512" height="512"/><img class="floating-flower flower-20" src="/assets/blossom-DK6sceq6.png" alt="" width="512" height="512"/><img class="floating-flower flower-21" src="/assets/blossom-DK6sceq6.png" alt="" width="512" height="512"/><img class="floating-flower flower-22" src="/assets/blossom-DK6sceq6.png" alt="" width="512" height="512"/><img class="floating-flower flower-23" src="/assets/blossom-DK6sceq6.png" alt="" width="512" height="512"/></div><section class="puzzle-content "><header class="puzzle-heading"><h1>solve our little picture<!-- --> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart title-heart" aria-hidden="true"><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"></path></svg></h1><p>tap two tiles to swap them. the page unlocks when the picture is complete.</p></header><div class="puzzle-board" aria-label="Fotoğraf yapbozu"><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium cursor-pointer transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 puzzle-tile h-9 px-4 py-2" aria-label="Parça 1" aria-pressed="false" style="--tile-x:-100%;--tile-y:-100%"><img src="/__l5e/assets-v1/9ec615bc-59f7-4e0f-bbff-3bc6c0e625cb/our-picture.jpeg" alt="" class="tile-photo" draggable="false"/></button><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium cursor-pointer transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 puzzle-tile h-9 px-4 py-2" aria-label="Parça 2" aria-pressed="false" style="--tile-x:-200%;--tile-y:-200%"><img src="/__l5e/assets-v1/9ec615bc-59f7-4e0f-bbff-3bc6c0e625cb/our-picture.jpeg" alt="" class="tile-photo" draggable="false"/></button><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium cursor-pointer transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 puzzle-tile h-9 px-4 py-2" aria-label="Parça 3" aria-pressed="false" style="--tile-x:-300%;--tile-y:0%"><img src="/__l5e/assets-v1/9ec615bc-59f7-4e0f-bbff-3bc6c0e625cb/our-picture.jpeg" alt="" class="tile-photo" draggable="false"/></button><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium cursor-pointer transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 puzzle-tile h-9 px-4 py-2" aria-label="Parça 4" aria-pressed="false" style="--tile-x:0%;--tile-y:-300%"><img src="/__l5e/assets-v1/9ec615bc-59f7-4e0f-bbff-3bc6c0e625cb/our-picture.jpeg" alt="" class="tile-photo" draggable="false"/></button><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium cursor-pointer transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 puzzle-tile h-9 px-4 py-2" aria-label="Parça 5" aria-pressed="false" style="--tile-x:-100%;--tile-y:-200%"><img src="/__l5e/assets-v1/9ec615bc-59f7-4e0f-bbff-3bc6c0e625cb/our-picture.jpeg" alt="" class="tile-photo" draggable="false"/></button><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium cursor-pointer transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 puzzle-tile h-9 px-4 py-2" aria-label="Parça 6" aria-pressed="false" style="--tile-x:0%;--tile-y:0%"><img src="/__l5e/assets-v1/9ec615bc-59f7-4e0f-bbff-3bc6c0e625cb/our-picture.jpeg" alt="" class="tile-photo" draggable="false"/></button><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium cursor-pointer transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 puzzle-tile h-9 px-4 py-2" aria-label="Parça 7" aria-pressed="false" style="--tile-x:-200%;--tile-y:-300%"><img src="/__l5e/assets-v1/9ec615bc-59f7-4e0f-bbff-3bc6c0e625cb/our-picture.jpeg" alt="" class="tile-photo" draggable="false"/></button><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium cursor-pointer transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 puzzle-tile h-9 px-4 py-2" aria-label="Parça 8" aria-pressed="false" style="--tile-x:-300%;--tile-y:-100%"><img src="/__l5e/assets-v1/9ec615bc-59f7-4e0f-bbff-3bc6c0e625cb/our-picture.jpeg" alt="" class="tile-photo" draggable="false"/></button><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium cursor-pointer transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 puzzle-tile h-9 px-4 py-2" aria-label="Parça 9" aria-pressed="false" style="--tile-x:-200%;--tile-y:0%"><img src="/__l5e/assets-v1/9ec615bc-59f7-4e0f-bbff-3bc6c0e625cb/our-picture.jpeg" alt="" class="tile-photo" draggable="false"/></button><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium cursor-pointer transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 puzzle-tile h-9 px-4 py-2" aria-label="Parça 10" aria-pressed="false" style="--tile-x:-300%;--tile-y:-300%"><img src="/__l5e/assets-v1/9ec615bc-59f7-4e0f-bbff-3bc6c0e625cb/our-picture.jpeg" alt="" class="tile-photo" draggable="false"/></button><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium cursor-pointer transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 puzzle-tile h-9 px-4 py-2" aria-label="Parça 11" aria-pressed="false" style="--tile-x:0%;--tile-y:-100%"><img src="/__l5e/assets-v1/9ec615bc-59f7-4e0f-bbff-3bc6c0e625cb/our-picture.jpeg" alt="" class="tile-photo" draggable="false"/></button><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium cursor-pointer transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 puzzle-tile h-9 px-4 py-2" aria-label="Parça 12" aria-pressed="false" style="--tile-x:-100%;--tile-y:0%"><img src="/__l5e/assets-v1/9ec615bc-59f7-4e0f-bbff-3bc6c0e625cb/our-picture.jpeg" alt="" class="tile-photo" draggable="false"/></button><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium cursor-pointer transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 puzzle-tile h-9 px-4 py-2" aria-label="Parça 13" aria-pressed="false" style="--tile-x:-100%;--tile-y:-300%"><img src="/__l5e/assets-v1/9ec615bc-59f7-4e0f-bbff-3bc6c0e625cb/our-picture.jpeg" alt="" class="tile-photo" draggable="false"/></button><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium cursor-pointer transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 puzzle-tile h-9 px-4 py-2" aria-label="Parça 14" aria-pressed="false" style="--tile-x:-200%;--tile-y:-100%"><img src="/__l5e/assets-v1/9ec615bc-59f7-4e0f-bbff-3bc6c0e625cb/our-picture.jpeg" alt="" class="tile-photo" draggable="false"/></button><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium cursor-pointer transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 puzzle-tile h-9 px-4 py-2" aria-label="Parça 15" aria-pressed="false" style="--tile-x:-300%;--tile-y:-200%"><img src="/__l5e/assets-v1/9ec615bc-59f7-4e0f-bbff-3bc6c0e625cb/our-picture.jpeg" alt="" class="tile-photo" draggable="false"/></button><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium cursor-pointer transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 puzzle-tile h-9 px-4 py-2" aria-label="Parça 16" aria-pressed="false" style="--tile-x:0%;--tile-y:-200%"><img src="/__l5e/assets-v1/9ec615bc-59f7-4e0f-bbff-3bc6c0e625cb/our-picture.jpeg" alt="" class="tile-photo" draggable="false"/></button></div><div class="help-bar"><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium cursor-pointer transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 help-button h-9 px-4 py-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-wand-sparkles" aria-hidden="true"><path d="m21.64 3.64-1.28-1.28a1.21 1.21 0 0 0-1.72 0L2.36 18.64a1.21 1.21 0 0 0 0 1.72l1.28 1.28a1.2 1.2 0 0 0 1.72 0L21.64 5.36a1.2 1.2 0 0 0 0-1.72"></path><path d="m14 7 3 3"></path><path d="M5 6v4"></path><path d="M19 14v4"></path><path d="M10 2v2"></path><path d="M7 8H3"></path><path d="M21 16h-4"></path><path d="M11 3H9"></path></svg> bir parça yardım</button><div class="puzzle-progress" role="progressbar" aria-label="Yerleşen parçalar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="16"><span style="--progress:6.25%"></span></div><span class="progress-count">1<!-- --> / 16</span></div></section></main><script>(function(a,f){let l;try{l=JSON.parse(sessionStorage.getItem(a)||"{}")}catch{return}const n=l?.[f||history.state?.__TSR_key];let c=!1;for(const t in n){const e=n[t],o=e?.scrollX,s=e?.scrollY;if(Number.isFinite(o)&&Number.isFinite(s)){if(t==="window")scrollTo(o,s),c=!0;else if(t)try{const r=document.querySelector(t);r&&(r.scrollLeft=o,r.scrollTop=s)}catch{}}}if(c)return;const i=location.hash.slice(1);if(i){const t=history.state?.__hashScrollIntoViewOptions??!0;if(t){const e=document.getElementById(i);e&&e.scrollIntoView(t)}return}scrollTo(0,0)})("tsr-scroll-restoration-v1_3");document.currentScript.remove()</script><!--/$--><script data-tsr-stream-part="">(self.$R=self.$R||{})["tsr"]=[];self.$_TSR={h(){this.hydrated=!0,this.c()},e(){this.streamEnded=!0,this.c()},c(){this.hydrated&&this.streamEnded&&(delete self.$_TSR,delete self.$R.tsr)},p(e){this.initialized?e():this.buffer.push(e)},buffer:[]};$_TSR.router=($R=>$R[0]={manifest:$R[1]={routes:$R[2]={__root__:$R[3]={preloads:$R[4]=["/assets/index-BvkMhzdN.js"],scripts:$R[5]=[$R[6]={attrs:$R[7]={type:"module",async:!0,src:"/assets/index-BvkMhzdN.js"}}]},"/":$R[8]={preloads:$R[9]=["/assets/routes-401Ihkni.js"]}}},matches:$R[10]=[$R[11]={i:"__root__ ",u:1791707090473,s:"success",ssr:!0},$R[12]={i:"  ",u:1791707090473,s:"success",ssr:!0}]})($R["tsr"]);$_TSR.e();{let s=document.currentScript,p;while((p=s.previousElementSibling)&&p.hasAttribute('data-tsr-stream-part'))p.remove();s.remove()}</script><script type="module" async="" src="/assets/index-BvkMhzdN.js"></script><script>document.currentScript.remove();/*$tsr-stream-boundary*/</script>
+</body></html>
